@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Web</title>
+    <link rel="stylesheet" id="blink" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="magnetic">
+            <img class="dalogo" src="img/Logo-Rusa-01.svg" width="70px" height="70px">
+            <h3 class="daname">Rusa Jantan</h3>
+        </div>
+
+        <div class="everyhour">
+            <div class="prov">
+ 
+                <label> Pilih Provinsi :</label> 
+                <select name="prov" id="Provinsi" onchange="escapeValue()" >
+                    <option selected> -- Pilih Provinsi Anda --</option>
+                    <option value="sul-sel">Sulawesi Selatan</option>
+                    <option value="sul-bar">Sulawesi Barat</option>
+                    <option value="sul-lut">Sulawesi Utara</option>
+                    <option value="sul-teng">Sulawesi Tengah</option>
+                </select>
+
+            
+                <label> Pilih Kota :</label> 
+                <select name="kot" id="Kota" onchange="escapeCity()">
+                    
+
+                </select>
+
+                <div class="infor">
+                    <h2 id="head"> </h2>
+                </div>
+
+                <div class="amazing">
+                    <!--<button class="tombol" id="button-dark"> Dark Mode</button> -->
+                    <input type="checkbox" onclick="darkModa()">
+                </div>
+
+                <script src="index.js"> </script>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

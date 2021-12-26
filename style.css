@@ -1,0 +1,72 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+.html {
+  background-color: antiquewhite;
+  color: #222222;
+}
+.container {
+  padding: 20px;
+}
+
+.magnetic {
+  display: block;
+  text-align: center;
+}
+
+.dark {
+  display: flex;
+  justify-content: center;
+}
+
+.daname {
+  margin-top: -10px;
+}
+
+.everyhour {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.amazing {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  appearance: none;
+  background-color: #222222;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgb(60, 168, 231);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: antiquewhite;
+  border-radius: 50px;
+  top: 2px;
+  left: 2px;
+  transition: 0.5s ease;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
+
+.dark {
+  background-color: #222222;
+  color: antiquewhite;
+}
